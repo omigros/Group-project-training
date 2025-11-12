@@ -7,12 +7,12 @@ a1 = 2      # коэффициент подъема апертуры 3x3
 a2 = 20     # коэффициент подъема центрального элемента
 gain = 0.25  # усиление фильтра (как в C++)
 
-image_path = 'test.jpg'  # путь к изображению
+image_path = 'test_noisy.jpg'  # путь к изображению
 
 # === Загрузка изображения ===
 img = cv2.imread(image_path)
 if img is None:
-    raise FileNotFoundError("Изображение не найдено. Помести test.jpg рядом со скриптом")
+    raise FileNotFoundError("Изображение не найдено. Помести test_noisy.jpg рядом со скриптом")
 
 # Перевод в оттенки серого
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY).astype(np.float32)
