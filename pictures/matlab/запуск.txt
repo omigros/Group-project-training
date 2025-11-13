@@ -1,0 +1,4 @@
+cmd
+cd /d "D:\FOLDERS\STUDY\WORK with Kamenskiy\image filter\Group-project-training"
+octave --persist sharp_filter_nopkg2.m
+
